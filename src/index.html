@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body>
+    <div data-barba="wrapper">
+      <div data-barba="container" data-barba-namespace="home">
+        <div class="container mx-auto p-6">
+          <div class="text-center">
+            <h1 class="text-4xl font-bold mb-2">PRODUCT FOR EVERYONE</h1>
+            <p class="text-lg mb-6">Shop Our Summer Trendy Collections</p>
+            <button
+              class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            >
+              Shop all collection
+            </button>
+          </div>
 
-<body>
-  <div class="container mx-auto p-6">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold mb-2">PRODUCT FOR EVERYONE</h1>
-      <p class="text-lg mb-6">Shop Our Summer Trendy Collections</p>
-      <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
-        Shop all collection
-      </button>
-    </div>
+          <div class="flex justify-between items-center mt-8">
+            <p>Showing of 16 products</p>
+            <div class="flex space-x-2">
+              <a
+                href=""
+                class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center"
+                ><i class="ri-shopping-cart-2-line"></i
+              ></a>
+              <button class="bg-gray-200 p-2 rounded">▤</button>
+              <button class="bg-gray-200 p-2 rounded">▦</button>
+              <button class="bg-gray-200 p-2 rounded">▧</button>
+            </div>
+          </div>
 
-    <div class="flex justify-between items-center mt-8">
-      <p>Showing of 16 products</p>
-      <div class="flex space-x-2">
-        <a href="" class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center"><i class="ri-shopping-cart-2-line"></i></a>
-        <button class="bg-gray-200 p-2 rounded">▤</button>
-        <button class="bg-gray-200 p-2 rounded">▦</button>
-        <button class="bg-gray-200 p-2 rounded">▧</button>
+          <div
+            class="productContainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
+          >
+            <!-- Product Card Start -->
+
+            <!-- Product Card End -->
+
+            <!-- Repeat the above product card for other products -->
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      class="curtain fixed top-[100%] left-0 z-[999] h-[100vh] w-full bg-red-500"
+    ></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    <div class="productContainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-      <!-- Product Card Start -->
-
-      <!-- Product Card End -->
-
-      <!-- Repeat the above product card for other products -->
-    </div>
-  </div>
-
-  <script src="./script.js"></script>
-
-</body>
-
+    <script type="module" src="route.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
