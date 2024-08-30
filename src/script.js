@@ -93,3 +93,7 @@ document
       console.log(products);
     }
   });
+
+
+  console.log("TESTING");
+  
