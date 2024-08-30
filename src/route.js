@@ -45,7 +45,7 @@ const barbaJS = () => {
             });
         },
         enter(data) {
-          return gsap.timeline().to(".curtain", {
+          return gsap.timeline().to(".curtain2", {
             top: "-100%",
             duration: 1,
           });
