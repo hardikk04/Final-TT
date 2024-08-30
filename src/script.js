@@ -68,9 +68,9 @@ products.forEach((prod, idx) => {
             </div>
           </div>
           <div class="mt-4 flex justify-between">
-            <div data-index=${idx} class="addtocart bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600" >
+            <a href="inside.html?index=${idx}" data-index=${idx} class="addtocart bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600" >
               Add to cart
-            </div>
+            </a>
             <button
               class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800"
             >
@@ -90,3 +90,4 @@ document.querySelector(".productContainer").addEventListener("click", function (
         console.log(products);
     }
 })
+
